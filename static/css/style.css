@@ -1,0 +1,380 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #171717;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+    color: #1B3A7D;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-right a {
+    margin-left: 1.5rem;
+    font-weight: 500;
+}
+
+.nav-right a:hover {
+    color: #A01C1C;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.nav-left .logo {
+    height: 40px;
+    width: auto;
+    margin-right: 5px;
+}
+
+.nav-left h2 {
+    font-size: 1.1rem;
+    color: #1B3A7D;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1B3A7D;
+    color: white;
+    padding: 4rem 0;
+}
+
+.hero-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 475px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hero-text {
+    width: 70%;
+    text-align: left;
+    padding-left: 70px;
+}
+
+.hero-text h1 {
+    font-size: 4.75rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .hero-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image img {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+    .hero-text {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Sections */
+.section {
+    padding: 4rem 0;
+}
+.section.light {
+    background-color: #f9f9f9;
+}
+.section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    color: #0d224f;
+}
+.section p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem
+}
+
+/* Card Grid */
+.card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.card {
+    width: 365px;
+    min-height: 250px;
+    padding: 2rem;
+    border-radius: 12px;
+    color: white;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card.blue {
+    background-color: #1B3A7D;
+}
+
+.card.red {
+    background-color: #A01C1C;
+}
+
+/* Icons */
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    text-align: left;
+}
+
+.card-icon.with-bg {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff33;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.card-icon.with-bg img {
+    width: 28px;
+    height: 28px;
+}
+
+.card-icon img {
+    width: 55px;
+    height: 55px;
+}
+
+/* Card Text */
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+    max-width: 280px;
+    color: #FFFFFFE6;
+}
+
+/* Magazine Issues */
+.issue-grid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.issue-item {
+    width: 300px;
+    text-align: center;
+}
+
+.issue-item img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 0;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+.issue-item img:hover {
+    transform: translateY(-2px);
+}
+
+.issue-item h3 {
+    font-size: 1.3rem;
+    color: #1B3A7D;
+    margin: 0.5rem 0 0.75rem;
+    font-weight: 700;
+}
+
+.issue-item p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #171717;
+    margin: 0 0 1rem;
+}
+
+.view-link {
+    display: inline-block;
+    color: #1B3A7D;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    transition: color 0.2s ease;
+}
+
+.view-link:hover {
+    color: #C52F2F;
+}
+
+/* Contact */
+.center {
+    text-align: center;
+}
+
+.icon {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+.email {
+    font-size: 1.5rem;
+    color: #1B3A7D;
+    font-weight: 500;
+}
+
+.contact-icon {
+    width: 75px;
+    height: 75px;
+    background-color: #1B3A7D;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.contact-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Footer */
+footer {
+    background-color: #1B3A7D;
+    color: #dedede;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.footer-content {
+    margin-left: 10%;
+    margin-right: auto;
+    text-align: left;
+}
+
+.footer-content p {
+    margin: 0.25rem 0;
+}
+
+.footer-content h2 {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+/* Divider Line */
+.footer-divider {
+    width: 90%;
+    max-width: 1300px;
+    height: 1px;
+    background-color: #ffffff33;
+    margin: 0.8rem 10% 0.75rem;
+}
+
+/* Attribution */
+.footer-attribution {
+    font-size: 0.8rem;
+    color: #ffffffb3;
+    margin-left: 10%;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 0;
+    text-align: left;
+}
+
+.footer-attribution a {
+    color: #ffffffb3;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.footer-attribution a:hover {
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .nav-right a { margin-left: 1rem; font-size: 0.9rem; }
+    .cards, .issue-grid { flex-direction: column; align-items: center; }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        max-width: 340px;
+        min-height: auto;
+    }
+}

@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block content %}
+<nav>
+    <div class="nav-left">
+        <img src="static/alhussan_logo.png" alt="Alhussan Logo" class="logo">
+        <h2>JIS Journalism Club</h2>
+    </div>
+    <div class="nav-right">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#issues">Issues</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-flex">
+        <div class="hero-image">
+            <img src="static/magazines_photo.jpg" alt="Magazines">
+        </div>
+        <div class="hero-text">
+            <h1>JIS Magazine</h1>
+            <p>Discover what’s happening across Jubail International School — from big events to everyday moments.
+               Published twice yearly by the JIS Journalism Club.</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="container">
+        <h2>About JIS Magazine</h2>
+        <p>A student-led publication showcasing creativity, talent, and diverse voices from Jubail International School.</p>
+        <div class="card-grid">
+            <div class="card blue">
+                <div class="card-icon with-bg">
+                    <img src="static/users.svg">
+                </div>
+                <h3>Student Voices</h3>
+                <p>Written entirely by students, for students. We cover school events, student perspectives, and community moments.</p>
+            </div>
+            <div class="card red">
+                <div class="card-icon with-bg">
+                    <img src="static/sparkles-2.svg">
+                </div>
+                <h3>Creative Excellence</h3>
+                <p>Featuring original artwork, photography, poetry, and creative writing from our talented student body.</p>
+            </div>
+            <div class="card blue">
+                <div class="card-icon with-bg">
+                    <img src="static/target.svg">
+                </div>
+                <h3>Our Mission</h3>
+                <p>To inform, inspire, and connect our school community through quality journalism and creative expression.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What's Inside -->
+<section class="section light">
+    <div class="container">
+        <h2>What’s Inside</h2>
+        <p>Each issue is packed with diverse content created by students, for students.</p>
+        <div class="card-grid">
+            <div class="card blue">
+                <div class="card-icon">
+                    <img src="static/news.svg">
+                </div>
+                <h3>Student News</h3>
+                <p>Stay updated with the latest happenings around campus, from events to achievements.</p>
+            </div>
+            <div class="card red">
+                <div class="card-icon">
+                    <img src="static/camera.svg">
+                </div>
+                <h3>Photo Stories</h3>
+                <p>Visual narratives capturing the essence of student life and memorable moments.</p>
+            </div>
+            <div class="card blue">
+                <div class="card-icon">
+                    <img src="static/pencil.svg">
+                </div>
+                <h3>Creative Writing</h3>
+                <p>Original stories, poems, and essays that showcase our students’ literary talents.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Magazine Issues -->
+<section id="issues" class="section">
+    <div class="container">
+        <h2>Magazine Issues</h2>
+        <div class="issue-grid">
+            <div class="issue-item">
+                <img src="static/spring2026_cover.jpg" alt="2026 Spring Issue">
+                <h3>Spring 2026</h3>
+                <p>Upcoming...</p>
+                <a href="#" class="view-link">View Issue</a>
+            </div>
+            <div class="issue-item">
+                <img src="static/fall2025_cover.jpg" alt="2025 Fall Issue">
+                <h3>Fall 2025</h3>
+                <p>Highlighting school activities, cultural events, and student experiences this fall.</p>
+                <a href="https://publuu.com/flip-book/1048735/2325647" class="view-link">View Issue</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section light">
+    <div class="container center">
+        <div class="contact-icon">
+            <img src="static/mail.svg" alt="Email">
+        </div>
+        <h2>We’d Love to Hear From You</h2>
+        <p>Have feedback or suggestions? Please feel free to reach out to us at:</p>
+        <h3 class="email">jismagazine@gmail.com</h3>
+    </div>
+</section>
+{% endblock %}

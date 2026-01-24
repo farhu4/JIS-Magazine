@@ -1,0 +1,2 @@
+addwhiteborder.com for white border on cover images
+tabler.io for svg icons
